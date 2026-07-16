@@ -1,27 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-PORTFOLIO
-</title>
-<style>
-body {
-  background-image:"https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-  h1 {
-    color:LIGHT BLUE;
-  }
-  H2 {
-    color:LIGHT GREEN;
-  }
-</style>
-<body>
-<body Background="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" >
-  <h1>CURRENTLY A BTECH COMPUTER ENGINEERING STUDENT,NEED TO DEVELOP MORE SKILLS.</h1>
-<H2>  check out this site to download free islamic arabic nasheeds : <a href="https://68a0c62471bb7.site123.me/">ISLAMIC NASHEEDS HUB </a> </H2>
-</body>
-</head>
-</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            /* FIX 1: Added 'url()' around the link */
+            background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+            /* FIX 2: Added height to make it fill the screen */
+            min-height: 100vh;
+            
+            /* FIX 3: Added flex to center content nicely */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* FIX 4: Removed the space in the color name */
+        h1 {
+            color: lightblue;
+            background: rgba(0, 0, 0, 0.5); /* Adds a dark background behind text for readability */
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+        }
+
+        /* FIX 5: Removed the space in the color name */
+        h2 {
+            color: lightgreen;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+        }
+
+        /* Style for the link */
+        h2 a {
+            color: gold;
+            text-decoration: underline;
+        }
+
+        h2 a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<!-- FIX 6: Removed the duplicate <body> tag and placed </head> correctly -->
+<body>
+    <h1>CURRENTLY A BTECH COMPUTER ENGINEERING STUDENT, NEED TO DEVELOP MORE SKILLS.</h1>
+    <H2>
+        Check out this site to download free Islamic Arabic nasheeds : 
+        <a href="https://68a0c62471bb7.site123.me/">ISLAMIC NASHEEDS HUB</a> 
+    </H2>
+</body>
+</html>
